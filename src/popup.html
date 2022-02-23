@@ -7,40 +7,94 @@
     <title>Document</title>
     <link rel="stylesheet" href="../dist/style.css" />
     <script type="text/javascript" src="./popup.js"></script>
+    <script src='autoComplete.min.js'></script>
 </head>
 <body class="bg-slate-400" style="width: 500px;">
     <img src="./images/logo.svg">
     <div class="w-2/3 mx-auto">
-        <div class="bg-white shadow-md rounded mx-6">
+      <div id="alert" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-5 rounded relative hidden" role="alert">
+        <strong class="font-bold">Try Again!</strong>
+        <span class="block sm:inline">Please enter a valid ID or make sure you are using the correct server.</span>
+        <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+          <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"></svg>
+        </span>
+      </div>
+        <div class="bg-white shadow-md rounded mx-3">
             <div class="flex">
-                <span id="IdLabel" class="text-sm border border-2 rounded-l px-4 py-2 bg-gray-300 whitespace-no-wrap text-center">Wallet ID:</span>
+                <span id="IdLabel" class="text-sm border border-2 rounded-l px-4 py-2 bg-gray-300 whitespace-no-wrap text-center ">Wallet ID:</span>
                 <input id="walletID" name="wallet-ID" class="border border-2 rounded-r px-4 py-2 w-full" type="text" placeholder="0x93382bF5F8578EfAf73A3bCC0483CCD9151dc7Cb" />
             </div>
-
+            <div class="text-center">
+            <label class="font-bold" for="server">Choose a server:</label>
+              <select name="server" id="serverOptions">
+                <option value="https://btg.2miners.com/">https://btg.2miners.com/</option>
+                <option value="https://solo-btg.2miners.com/">https://solo-btg.2miners.com/</option>
+                <option value="https://zec.2miners.com/">https://zec.2miners.com/</option>
+                <option value="https://solo-zec.2miners.com/">https://solo-zec.2miners.com/</option>
+                <option value="https://zen.2miners.com/">https://zen.2miners.com/</option>
+                <option value="https://solo-zen.2miners.com/">https://solo-zen.2miners.com/</option>
+                <option value="https://eth.2miners.com/">https://eth.2miners.com/</option>
+                <option value="https://solo-eth.2miners.com/">https://solo-eth.2miners.com/</option>
+                <option value="https://etc.2miners.com/">https://etc.2miners.com/</option>
+                <option value="https://solo-etc.2miners.com/">https://solo-etc.2miners.com/</option>
+                <option value="https://exp.2miners.com/">https://etp.2miners.com/</option>
+                <option value="https://solo-exp.2miners.com/">https://solo-exp.2miners.com/</option>
+                <option value="https://etp.2miners.com/">https://etp.2miners.com/</option>
+                <option value="https://solo-etp.2miners.com/">https://solo-etp.2miners.com/</option>
+                <option value="https://clo.2miners.com/">https://clo.2miners.com/</option>
+                <option value="https://solo-clo.2miners.com/">https://solo-clo.2miners.com/</option>
+                <option value="https://xmr.2miners.com/">https://xmr.2miners.com/</option>
+                <option value="https://solo-xmr.2miners.com/">https://solo-xmr.2miners.com/</option>
+                <option value="https://xzc.2miners.com/">https://xzc.2miners.com/</option>
+                <option value="https://solo-xzc.2miners.com/">https://solo-xzc.2miners.com/</option>
+                <option value="https://zel.2miners.com/">https://zel.2miners.com/</option>
+                <option value="https://solo-zel.2miners.com/">https://solo-zel.2miners.com/</option>
+                <option value="https://grin.2miners.com/">https://grin.2miners.com/</option>
+                <option value="https://solo-grin.2miners.com/">https://solo-grin.2miners.com/</option>
+                <option value="https://mwc.2miners.com/">https://mwc.2miners.com/</option>
+                <option value="https://solo-mwc.2miners.com/">https://solo-mwc.2miners.com/</option>
+                <option value="https://rvn.2miners.com/">https://rvn.2miners.com/</option>
+                <option value="https://solo-rvn.2miners.com/">https://solo-rvn.2miners.com/</option>
+                <option value="https://ae.2miners.com/">https://ae.2miners.com/</option>
+                <option value="https://solo-ae.2miners.com/">https://solo-ae.2miners.com/</option>
+                <option value="https://beam.2miners.com/">https://beam.2miners.com/</option>
+                <option value="https://solo-beam.2miners.com/">https://solo-beam.2miners.com/</option>
+                <option value="https://ctxc.2miners.com/">https://ctxc.2miners.com/</option>
+                <option value="https://solo-ctxc.2miners.com/">https://solo-ctxc.2miners.com/</option>
+                <option value="https://ckb.2miners.com/">https://ckb.2miners.com/</option>
+                <option value="https://solo-ckb.2miners.com/">https://solo-ckb.2miners.com/</option>
+              </select>
+            </div>
           <table id="table" class="text-left w-full border-collapse hidden">
             <thead>
               <tr>
-                <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Description</th>
-                <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Value</th>
+                <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light text-center">Description</th>
+                <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light text-center">Value</th>
               </tr>
             </thead>
             <tbody>
               <tr class="hover:bg-grey-lighter">
-                <td class="py-4 px-6 border-b border-grey-light">24h Reward: </td>
-                <td class="py-4 px-6 border-b border-grey-light">
-                  <a id="24hReward" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark"></a>
+                <td class="py-4 px-6 border-b border-grey-light text-center">Current Hashrate: </td>
+                <td class="py-4 px-6 border-b border-grey-light text-center">
+                  <a id="hashrate" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark text-center"></a>
                 </td>
               </tr>
               <tr class="hover:bg-grey-lighter">
-                <td class="py-4 px-6 border-b border-grey-light">Balance: </td>
-                <td class="py-4 px-6 border-b border-grey-light">
-                  <a id="balance" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark"></a>
+                <td class="py-4 px-6 border-b border-grey-light text-center">24h Reward: </td>
+                <td class="py-4 px-6 border-b border-grey-light text-center">
+                  <a id="24hReward" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark text-center"></a>
                 </td>
               </tr>
               <tr class="hover:bg-grey-lighter">
-                <td class="py-4 px-6 border-b border-grey-light">Workers Online: </td>
-                <td class="py-4 px-6 border-b border-grey-light">
-                  <a id="workersOnline" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark"></a>
+                <td class="py-4 px-6 border-b border-grey-light text-center">Balance: </td>
+                <td class="py-4 px-6 border-b border-grey-light text-center">
+                  <a id="balance" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark text-center"></a>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light text-center">Workers Online: </td>
+                <td class="py-4 px-6 border-b border-grey-light text-center">
+                  <a id="workersOnline" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark text-center"></a>
                 </td>
               </tr>
             </tbody>
@@ -48,6 +102,7 @@
           
         </div>
         <button id="requestBtn" class="my-5 block uppercase mx-auto shadow bg-primary hover:bg-black focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded" >Search</button>
+
       </div>
 
 </body>

@@ -1,24 +1,32 @@
 {
-    "name": "2miners",
-    "version": "0.0.1",
-    "manifest_version": 2,
-    "description": "A browser extension to view the progress of your crypto miners.",
-    "homepage_url": "http://extensionizr.com",
-    "icons": {
-      "34": "./src/icons/icon34.png",
-      "128": "./src/icons/icon128.png"
-    },
-    "background": {
-        "script": ["background.js"]
-    },
-    "browser_action": {
-        "default_popup": "popup.html"
-    },
-    "permissions": [
-      "clipboardRead",
-      "clipboardWrite",
-      "https://*/*",
-      "https://eth.2miners.com/api/accounts/*"
-    ]
-  }
+  "name": "2miners",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "A browser extension to view the progress of your crypto miners.",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "./icons/icon-16.png",
+    "32": "./icons/icon-32.png",
+    "128": "./icons/icon-128.png"
+  },
+  "background": {
+      "script": ["background.js"]
+  },
+  "action":{
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://unpkg.com/revo-dropdown@latest/dist/revo-dropdown.js"
+},
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "https://eth.2miners.com/api/accounts/*",
+    "<all_urls>",
+    "https://unpkg.com/revo-dropdown@latest/dist/revo-dropdown.js"
+  ]
+}
   

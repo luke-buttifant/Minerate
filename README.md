@@ -27,7 +27,7 @@ chrome://extensions
 
 5. Press 'Load unpacked'
 
-6. Select the 'Build' Folder from this project. 
+6. Select the 'dist' directory from this project. 
 
 ### Done!! :partying_face: 
 
