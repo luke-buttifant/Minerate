@@ -1,5 +1,5 @@
 # 2Miners-Browser-Extension - :building_construction: In Development :building_construction:
-:moneybag: Supports every every coin. :moneybag:
+:stop_sign: Currently only supports the ethereum pool. :stop_sign:
 
 This is a browser extension to track progress of cryptominers using https://2miners.com API
 
