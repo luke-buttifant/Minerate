@@ -11,9 +11,16 @@
 <body class="bg-slate-400" style="width: 500px;">
     <img src="./images/logo.svg">
     <div class="w-2/3 mx-auto">
-        <div class="bg-white shadow-md rounded mx-6">
+      <div id="alert" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-5 rounded relative hidden" role="alert">
+        <strong class="font-bold">Try Again!</strong>
+        <span class="block sm:inline">Please Enter a valid ID.</span>
+        <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+          <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"></svg>
+        </span>
+      </div>
+        <div class="bg-white shadow-md rounded mx-3">
             <div class="flex">
-                <span id="IdLabel" class="text-sm border border-2 rounded-l px-4 py-2 bg-gray-300 whitespace-no-wrap text-center">Wallet ID:</span>
+                <span id="IdLabel" class="text-sm border border-2 rounded-l px-4 py-2 bg-gray-300 whitespace-no-wrap text-center ">Wallet ID:</span>
                 <input id="walletID" name="wallet-ID" class="border border-2 rounded-r px-4 py-2 w-full" type="text" placeholder="0x93382bF5F8578EfAf73A3bCC0483CCD9151dc7Cb" />
             </div>
 
@@ -48,6 +55,7 @@
           
         </div>
         <button id="requestBtn" class="my-5 block uppercase mx-auto shadow bg-primary hover:bg-black focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded" >Search</button>
+
       </div>
 
 </body>
