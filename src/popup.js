@@ -1,7 +1,10 @@
 
-baseUrl = 'https://eth.2miners.com/api/accounts/'
+
+baseUrl = 'api/accounts/'
 
 window.onload = function(){
+    const select = document.getElementById('serverOptions');
+
     const table = document.getElementById("table");
     const walletIdInput = document.getElementById("walletID");
     const IdLabel = document.getElementById("IdLabel");
@@ -10,8 +13,9 @@ window.onload = function(){
 
     requestBtn.onclick = async () => {
         try{
+            var server = select.options[select.selectedIndex].value;
             id = walletIdInput.value;
-            const request = baseUrl + id
+            var request = server + baseUrl + id;
             const response = await fetch(request);
             const data = await response.json();
             var r_24Reward = (data['24hreward'] / 1000000000).toFixed(6)
