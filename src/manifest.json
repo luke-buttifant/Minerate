@@ -1,24 +1,24 @@
 {
-    "name": "2miners",
-    "version": "0.0.1",
-    "manifest_version": 2,
-    "description": "A browser extension to view the progress of your crypto miners.",
-    "homepage_url": "http://extensionizr.com",
-    "icons": {
-      "34": "./src/icons/icon34.png",
-      "128": "./src/icons/icon128.png"
-    },
-    "background": {
-        "script": ["background.js"]
-    },
-    "browser_action": {
-        "default_popup": "popup.html"
-    },
-    "permissions": [
-      "clipboardRead",
-      "clipboardWrite",
-      "https://*/*",
-      "https://eth.2miners.com/api/accounts/*"
-    ]
-  }
+  "name": "2miners",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A browser extension to view the progress of your crypto miners.",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "34": "./icons/icon-34.png",
+    "128": "./icons/icon-128.png"
+  },
+  "background": {
+      "script": ["background.js"]
+  },
+  "browser_action": {
+      "default_popup": "popup.html"
+  },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "https://*/*",
+    "https://eth.2miners.com/api/accounts/*"
+  ]
+}
   

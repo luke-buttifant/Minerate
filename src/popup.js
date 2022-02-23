@@ -7,7 +7,6 @@ window.onload = function(){
     const IdLabel = document.getElementById("IdLabel");
     const requestBtn = document.getElementById("requestBtn");
     const alert = document.getElementById("alert");
-    var toggled = 0;
 
     requestBtn.onclick = async () => {
         try{
@@ -23,15 +22,15 @@ window.onload = function(){
             table.classList.toggle('hidden');
             walletIdInput.classList.toggle('hidden');
             IdLabel.classList.toggle('hidden');
-            alert.classList.toggle("hidden");
+            alert.classList.add("hidden");
         }
         catch{
-            if(toggled < 1){
-                alert.classList.toggle("hidden");
-            }
-            toggled += 1;
+            alert.classList.remove("hidden");
+
         }
 
     }
+
 }
+
 
