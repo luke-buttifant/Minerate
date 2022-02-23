@@ -16,11 +16,12 @@ window.onload = function(){
             const data = await response.json();
             var r_24Reward = (data['24hreward'] / 1000000000).toFixed(6)
             var r_balance = (data['stats']['balance'] / 1000000000).toFixed(6)
+            var r_hashrate = (data['currentHashrate'] / 1000000).toFixed(2)
             
             document.getElementById("24hReward").innerHTML = r_24Reward;
             document.getElementById("balance").innerHTML = r_balance;
             document.getElementById("workersOnline").innerHTML =  data['workersOnline'];
-            document.getElementById("hashrate").innerHTML =  data['currentHashrate'];
+            document.getElementById("hashrate").innerHTML =  r_hashrate + " MH/s";
     
     
             table.classList.toggle('hidden');
