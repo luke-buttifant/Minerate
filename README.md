@@ -11,23 +11,15 @@ This is a browser extension to track progress of cryptominers using https://2min
 git clone https://github.com/luke-buttifant/2Miners-Browser-Extension.git
 ```
 
-2. Navigate to the directory
-
-```
-yarn install
-```
-
-3. Open Google Chrome and type this into the search bar:
+2. Open Google Chrome and type this into the search bar:
 
 ```
 chrome://extensions
 ```
 
-4. Enable Developer mode in the top right of the screen.
+3. Enable Developer mode in the top right of the screen.
 
-5. Press 'Load unpacked'
-
-6. Select the 'dist' directory from this project. 
+4. drag and drop the 'dist' folder onto the page. 
 
 ### Done!! :partying_face: 
 
