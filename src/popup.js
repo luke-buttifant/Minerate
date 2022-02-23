@@ -14,9 +14,13 @@ window.onload = function(){
             const request = baseUrl + id
             const response = await fetch(request);
             const data = await response.json();
-            document.getElementById("24hReward").innerHTML = data['24hreward'];
-            document.getElementById("balance").innerHTML = data['stats']['balance'];
+            var r_24Reward = (data['24hreward'] / 1000000000).toFixed(6)
+            var r_balance = (data['stats']['balance'] / 1000000000).toFixed(6)
+            
+            document.getElementById("24hReward").innerHTML = r_24Reward;
+            document.getElementById("balance").innerHTML = r_balance;
             document.getElementById("workersOnline").innerHTML =  data['workersOnline'];
+            document.getElementById("hashrate").innerHTML =  data['currentHashrate'];
     
     
             table.classList.toggle('hidden');
