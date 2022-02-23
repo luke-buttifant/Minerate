@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <script type="text/javascript" src="./popup.js"></script>
+</head>
+<body class="bg-slate-400" style="width: 500px;">
+    <img src="./images/logo.svg">
+    <div class="w-2/3 mx-auto">
+        <div class="bg-white shadow-md rounded mx-6">
+            <div class="flex">
+                <span id="IdLabel" class="text-sm border border-2 rounded-l px-4 py-2 bg-gray-300 whitespace-no-wrap text-center">Wallet ID:</span>
+                <input id="walletID" name="wallet-ID" class="border border-2 rounded-r px-4 py-2 w-full" type="text" placeholder="0x93382bF5F8578EfAf73A3bCC0483CCD9151dc7Cb" />
+            </div>
+
+          <table id="table" class="text-left w-full border-collapse hidden">
+            <thead>
+              <tr>
+                <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Description</th>
+                <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">24h Reward: </td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                  <a id="24hReward" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark"></a>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">Balance: </td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                  <a id="balance" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark"></a>
+                </td>
+              </tr>
+              <tr class="hover:bg-grey-lighter">
+                <td class="py-4 px-6 border-b border-grey-light">Workers Online: </td>
+                <td class="py-4 px-6 border-b border-grey-light">
+                  <a id="workersOnline" href="#" class="text-grey-lighter font-bold py-1 px-3 rounded text-xs bg-green hover:bg-green-dark"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+        <button id="requestBtn" class="my-5 block uppercase mx-auto shadow bg-primary hover:bg-black focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded" >Search</button>
+      </div>
+
+</body>
+</html>
