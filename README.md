@@ -1,4 +1,4 @@
-# 2Miners-Browser-Extension - :building_construction: In Development :building_construction:
+# 2Miners-Browser-Extension
 This is a browser extension to track progress of cryptominers using https://2miners.com API
 
 ## Getting Started
