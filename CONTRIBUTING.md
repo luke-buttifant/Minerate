@@ -1,4 +1,4 @@
-# Contributing to Transcriptase
+# Contributing to 2Miners-Browser-Extension
 I love your input! I want to make contributing to this project as easy and transparent as possible, whether it's:
 
 - Reporting a bug
