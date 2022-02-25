@@ -5,10 +5,7 @@ This is a browser extension to track progress of cryptominers using https://2min
 ### Will be available on the Chrome Store within the next 3 weeks. Untill then:
   1. Click [here](https://github.com/luke-buttifant/2Miners-Browser-Extension/archive/refs/heads/main.zip) to download ZIP.
   2. Unzip the folder.
-  3. Open Google Chrome and type this into the search bar:
-  ```
-  chrome://extensions
-  ```
+  3. Open Google Chrome and type this into the search bar: ``` chrome://extensions ```
   4. Enable Developer mode in the top right of the screen.
   5. drag and drop the 'dist' folder onto the page. 
 
