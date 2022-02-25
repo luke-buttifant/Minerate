@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "manifest_version": 3,
   "description": "A browser extension to view the progress of your crypto miners.",
-  "homepage_url": "http://extensionizr.com",
+  "homepage_url": "https://github.com/luke-buttifant/2Miners-Browser-Extension",
   "icons": {
     "16": "./icons/icon-16.png",
     "32": "./icons/icon-32.png",
@@ -14,18 +14,5 @@
   },
   "action":{
     "default_popup": "popup.html"
-  },
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://unpkg.com"
-},
-  "permissions": [
-    "clipboardRead",
-    "clipboardWrite"
-  ],
-  "host_permissions": [
-    "https://*/*",
-    "https://eth.2miners.com/api/accounts/*",
-    "<all_urls>",
-    "https://unpkg.com/revo-dropdown@latest/dist/revo-dropdown.js"
-  ]
+  }
 }
