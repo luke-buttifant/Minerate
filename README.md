@@ -21,3 +21,9 @@ chrome://extensions
 <p align="center">
   <img src="./src/images/thumbnail2.png" align="center" />
 </p>
+
+## To Develop
+1. ```yarn install ```
+2. ```npm run watch```
+3. Only edit 'src' folder. The dist folder will update automatically.
+
