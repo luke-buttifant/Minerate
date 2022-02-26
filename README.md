@@ -1,5 +1,6 @@
-#Development Branch - Adding Support for Different Platforms
+# Development Branch - Adding Support for Different Platforms
 # 2Miners-Browser-Extension
+
 This is a browser extension to track progress of cryptominers using https://2miners.com API
 
 ## Getting Started
