@@ -10004,9 +10004,9 @@ video {
           animation: bounce 1s infinite;
 }
 
-.animate-fade-in-down {
-  -webkit-animation: fade-in-down 0.5s ease-out;
-          animation: fade-in-down 0.5s ease-out;
+.animate-wiggle {
+  -webkit-animation: wiggle 1s ease-in-out infinite;
+          animation: wiggle 1s ease-in-out infinite;
 }
 
 .cursor-auto {
@@ -41915,9 +41915,9 @@ video {
             animation: bounce 1s infinite;
   }
 
-  .sm\:animate-fade-in-down {
-    -webkit-animation: fade-in-down 0.5s ease-out;
-            animation: fade-in-down 0.5s ease-out;
+  .sm\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
   }
 
   .sm\:cursor-auto {
@@ -73466,9 +73466,9 @@ video {
             animation: bounce 1s infinite;
   }
 
-  .md\:animate-fade-in-down {
-    -webkit-animation: fade-in-down 0.5s ease-out;
-            animation: fade-in-down 0.5s ease-out;
+  .md\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
   }
 
   .md\:cursor-auto {
@@ -105017,9 +105017,9 @@ video {
             animation: bounce 1s infinite;
   }
 
-  .lg\:animate-fade-in-down {
-    -webkit-animation: fade-in-down 0.5s ease-out;
-            animation: fade-in-down 0.5s ease-out;
+  .lg\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
   }
 
   .lg\:cursor-auto {
@@ -136568,9 +136568,9 @@ video {
             animation: bounce 1s infinite;
   }
 
-  .xl\:animate-fade-in-down {
-    -webkit-animation: fade-in-down 0.5s ease-out;
-            animation: fade-in-down 0.5s ease-out;
+  .xl\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
   }
 
   .xl\:cursor-auto {
@@ -168119,9 +168119,9 @@ video {
             animation: bounce 1s infinite;
   }
 
-  .\32xl\:animate-fade-in-down {
-    -webkit-animation: fade-in-down 0.5s ease-out;
-            animation: fade-in-down 0.5s ease-out;
+  .\32xl\:animate-wiggle {
+    -webkit-animation: wiggle 1s ease-in-out infinite;
+            animation: wiggle 1s ease-in-out infinite;
   }
 
   .\32xl\:cursor-auto {
@@ -190330,3 +190330,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+/*# sourceMappingURL=popup.ce8715ab.css.map */
