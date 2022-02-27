@@ -1,7 +1,7 @@
-# Track the Progress of your Miners!
+# This is a browser extension to track progress of your cryptominers.
 # Supports 2Miners and Flexpool but soon adding more
 ### Will soon support Ethermine.
-This is a browser extension to track progress of your cryptominers.
+
 
 ## Getting Started
 ### Will be available on the Chrome Store within the next 3 weeks. Untill then:
