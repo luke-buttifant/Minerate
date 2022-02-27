@@ -20,6 +20,13 @@ This is a browser extension to track progress of cryptominers using https://2min
 <p align="center">
   <img src="./src/images/thumbnail2.png" align="center" />
 </p>
+<p align="center" >
+  <img src="./src/images/thumbnail3.png" align="center"/>
+</p>
+<br>
+<p align="center">
+  <img src="./src/images/thumbnail4.png" align="center" />
+</p>
 
 ## To Develop
 1. ```yarn install ```
