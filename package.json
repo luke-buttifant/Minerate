@@ -16,7 +16,7 @@
   "scripts": {
     "prebuild": "rm -rf dist .cache .parcel-cache",
     "build:tailwind": "tailwindcss-cli -i ./src/style.css -c ./tailwind.config.js -o ./dist/style.css",
-    "watch": "yarn build:tailwind && parcel watch --no-hmr src/{background.js,popup.html}",
+    "watch": "yarn build:tailwind && parcel watch --no-hmr src/{background.js,popup.html,flexpool.html,flexpool.js}",
     "build": "yarn build:tailwind && copy 'src/manifest.json' 'dist/' && parcel build src/{background.js,popup.html}"
   }
 }

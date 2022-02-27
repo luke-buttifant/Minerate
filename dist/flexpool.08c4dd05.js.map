@@ -1,0 +1,1 @@
+{"mappings":"AAAA,KAAK,CAAC,SAAS,GAAG,QAAQ,CAAC,cAAc,CAAC,CAAY;AAEtD,SAAS,CAAC,gBAAgB,CAAC,CAAO","sources":["src/flexpool.js"],"sourcesContent":["const minersTab = document.getElementById(\"miners-tab\")\r\n\r\nminersTab.addEventListener(\"click\")"],"names":[],"version":3,"file":"flexpool.08c4dd05.js.map","sourceRoot":"../"}

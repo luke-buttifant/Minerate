@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="../dist/style.css" />
     <script type="text/javascript" src="./popup.js"></script>
 </head>
-<body class="bg-slate-200" style="width: 500px;">
-    <img src="./images/logo.svg">
+<body class="bg-slate-200 m-0" style="width: 500px;">
+    <img id="2Miners-logo" src="./images/logo.svg">
+    <img class="hidden mx-6 my-3" id="flexpool-logo" src="./images/flexpool-logo.svg">
+
     <div class="w-2/3 mx-auto">
       <div id="alert" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-5 rounded relative hidden" role="alert">
         <strong class="font-bold">Try Again!</strong>
@@ -105,10 +107,48 @@
         <button id="newSearchBtn" class="animate-wiggle my-5 block uppercase mx-auto shadow bg-primary hover:bg-black focus:shadow-outline focus:outline-none font-semibold text-white text-xs py-3 px-10 rounded hidden " >New Search</button>
 
       </div>
-      <div class="m-2 w-30 flex flex-row">
-        <div class=" font-bold mx-2 py-1 text-center align-middle">Contribute!</div>
-        <a href="https://github.com/luke-buttifant/2Miners-Browser-Extension" target="_blank"><img class="animate-wiggle" src="./images/github-logo.png"></a>
-      </div>
 
 </body>
+
+<footer>
+  			<!-- Navigation Bar -->
+        <div class="px-5 pt-3 bg-white">
+          <div class="flex flex-row space-x-3">
+            <!-- Item #1 -->
+            <div id="miners-tab" class="flex-1 group ">
+              <a id="miners-text" href="#" class="p-3 text-primary hover:text-primary">
+                <span class="flex flex-col items-center">
+                  <!-- Text -->
+                  
+                  <span class="text-xs mb-2 transition-all duration-200">
+                    2Miners
+                    
+                  </span>
+  
+                  <!-- Focus Dot -->
+                  <span id="miners-focusdot" class="h-1 w-2 rounded-full bg-primary group-hover:bg-primary
+                    hover:h-3 hover:w-3 transition-all duration-150 delay-100"></span>
+                </span>
+              </a>
+            </div>                                                                                                                     
+  
+            <!-- Item #2 -->
+            <div id="flexpool-tab" class="flex-1 group">
+              <a id="flexpool-text" href="#" class="p-3 text-gray-400 hover:text-blue-900">
+                <span class="flex flex-col items-center">
+                  <!-- Text -->
+                  <span class="text-xs mb-2 transition-all duration-200">
+                   FlexPool
+                  </span>
+  
+                  <!-- Focus Dot -->
+                  <span id="flexpool-focusdot" class="h-2 w-2 rounded-full group-hover:bg-blue-900
+                    transition-all duration-150 delay-100"></span>
+                </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+</footer>
 </html>

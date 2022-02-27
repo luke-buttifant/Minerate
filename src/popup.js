@@ -115,6 +115,8 @@ window.onload = function(){
             alert.classList.add("hidden");
             select.classList.toggle("hidden");
             optionsLbl.classList.toggle("hidden");
+            requestBtn.classList.add("hidden");
+            newSearchBtn.classList.remove("hidden");
 
             chrome.storage.sync.set({'storedID' : id}, function(){
                 if(chrome.runtime.error){
@@ -127,7 +129,6 @@ window.onload = function(){
                     console.log("Error.");
                 }
             });
-
         }
         catch{
             alert.classList.remove("hidden");
@@ -149,6 +150,16 @@ window.onload = function(){
         requestBtn.classList.remove("hidden");
         newSearchBtn.classList.add("hidden");
     })
+
+    const flexpoolTab = document.getElementById("flexpool-tab")
+
+    flexpoolTab.addEventListener("click", function(){
+        window.location.replace('./flexpool.html');
+       })
+    
+    
     }
+
+
 
 
