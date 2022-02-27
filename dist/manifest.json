@@ -1,9 +1,9 @@
 {
-  "name": "2miners",
+  "name": "Minerate",
   "version": "0.0.1",
   "manifest_version": 3,
-  "description": "A browser extension to view the progress of your crypto miners.",
-  "homepage_url": "https://github.com/luke-buttifant/2Miners-Browser-Extension",
+  "description": "A browser extension to view the progress of your crypto miners on 2Miners or FlexPool.",
+  "homepage_url": "https://github.com/luke-buttifant/Crypto-Mining-Tracker-Chrome-Extension",
   "icons": {
     "16": "./icons/icon-16.png",
     "32": "./icons/icon-32.png",

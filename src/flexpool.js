@@ -1,6 +1,7 @@
 
 window.onload = function(){
     const flexpoolServer = "https://api.flexpool.io/v2/miner/"
+    const href = "https://www.flexpool.io/en-GB/miner/eth/0xcf57B1311904D00f4Fc9CA625dba07D4BF8d7837/"
     var frequency;
 
     const table = document.getElementById("table");
@@ -53,15 +54,14 @@ window.onload = function(){
 
             var t_balanceDiv = document.getElementById("balance")
             t_balanceDiv.innerHTML = r_balance;
-            // t_balanceDiv.href = t_24RewardDiv.href = server + "account/" + id;
 
             var t_workersOnlineDiv = document.getElementById("workersOnline");
             t_workersOnlineDiv.innerHTML = workersOnline;
-            // t_workersOnlineDiv.href = server + "account/" + id;
 
             var t_hashrateDiv = document.getElementById("hashrate")
             t_hashrateDiv.innerHTML =  r_hashrate + " " + frequency;
-            // t_hashrateDiv.href = server + "account/" + id;
+
+            t_hashrateDiv.href = t_workersOnlineDiv.href = t_balanceDiv.href = href + ticker + "/" + id;
     
             table.classList.toggle('hidden');
             walletIdInput.classList.toggle('hidden');
