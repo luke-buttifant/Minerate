@@ -1,0 +1,1 @@
+{"mappings":"AACA,MAAM,CAAC,MAAM,GAAG,QAAQ,GAAE,CAAC;AAE3B,CAAC","sources":["src/flexpool.js"],"sourcesContent":["\r\nwindow.onload = function(){\r\n\r\n}\r\n"],"names":[],"version":3,"file":"flexpool.90890587.js.map","sourceRoot":"../"}

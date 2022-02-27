@@ -14,6 +14,7 @@ window.onload = function(){
     const optionsLbl = document.getElementById("optionsLabel");
     const newSearchBtn = document.getElementById("newSearchBtn");
 
+
     chrome.storage.sync.get(['storedID', 'storedServer'], async function(items){
         if(!chrome.runtime.error && items.storedID != undefined){
             var storedID = items.storedID;
@@ -114,6 +115,8 @@ window.onload = function(){
             alert.classList.add("hidden");
             select.classList.toggle("hidden");
             optionsLbl.classList.toggle("hidden");
+            requestBtn.classList.add("hidden");
+            newSearchBtn.classList.remove("hidden");
 
             chrome.storage.sync.set({'storedID' : id}, function(){
                 if(chrome.runtime.error){
@@ -126,7 +129,6 @@ window.onload = function(){
                     console.log("Error.");
                 }
             });
-
         }
         catch{
             alert.classList.remove("hidden");
@@ -149,42 +151,15 @@ window.onload = function(){
         newSearchBtn.classList.add("hidden");
     })
 
-
-    
-    //Additional Platform Support
     const flexpoolTab = document.getElementById("flexpool-tab")
-    const minersTab = document.getElementById("miners-tab")
-
-    const logoMiners = document.getElementById("2Miners-logo");
-    const flexpoolLogo = document.getElementById("flexpool-logo");
-
-    const minersFocusDot = document.getElementById("miners-focusdot");
-    const minersText = document.getElementById("miners-text");
-    const flexpoolText = document.getElementById("flexpool-text");
 
     flexpoolTab.addEventListener("click", function(){
-        logoMiners.classList.add("hidden")
-        flexpoolLogo.classList.remove("hidden")
-        requestBtn.classList.add("bg-flexpool")
-        minersFocusDot.classList.remove("bg-primary")
-        minersText.classList.remove("text-primary")
-        minersText.classList.add("text-gray-400")
-        flexpoolText.classList.add("text-flexpool")
+        window.location.replace('./flexpool.html');
        })
-
-    minersTab.addEventListener("click", function(){
-        logoMiners.classList.remove("hidden")
-        flexpoolLogo.classList.add("hidden")
-        requestBtn.classList.remove("bg-flexpool")
-        requestBtn.classList.add("bg-primary")
-        minersFocusDot.classList.add("bg-primary")
-        minersText.classList.add("text-primary")
-        minersText.classList.remove("text-gray-400")
-        flexpoolText.classList.remove("text-flexpool")
-    })
     
     
     }
+
 
 
 
