@@ -1,5 +1,5 @@
-# Development Branch - Adding Support for Different Platforms
-# 2Miners-Browser-Extension
+# Track the Progress of your Miners!
+# Supports 2Miners and Flexpool but soon adding more
 
 This is a browser extension to track progress of cryptominers using https://2miners.com API
 
