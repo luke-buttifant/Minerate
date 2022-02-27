@@ -1,7 +1,10 @@
-# Development Branch - Adding Support for Different Platforms
-# 2Miners-Browser-Extension
+#Minerate
+## A browser extension to track progress of your cryptominers.
+<p align="center" >
+  <img src="./src/icons/icon-500.png" align="center"/>
+</p>
 
-This is a browser extension to track progress of cryptominers using https://2miners.com API
+***Supports 2Miners and Flexpool but soon adding more, be sure to [watch this repo](https://github.com/luke-buttifant/Crypto-Mining-Tracker-Chrome-Extension/subscription) for any updates! (Etherminer next to be added)*** 
 
 ## Getting Started
 ### Will be available on the Chrome Store within the next 3 weeks. Untill then:
@@ -19,6 +22,13 @@ This is a browser extension to track progress of cryptominers using https://2min
 <br>
 <p align="center">
   <img src="./src/images/thumbnail2.png" align="center" />
+</p>
+<p align="center" >
+  <img src="./src/images/thumbnail3.png" align="center"/>
+</p>
+<br>
+<p align="center">
+  <img src="./src/images/thumbnail4.png" align="center" />
 </p>
 
 ## To Develop
