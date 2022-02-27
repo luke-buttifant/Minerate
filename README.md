@@ -1,4 +1,4 @@
-#Minerate
+# Minerate
 ## A browser extension to track progress of your cryptominers.
 <p align="center" >
   <img src="./src/icons/icon-500.png" align="center"/>
