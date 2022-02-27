@@ -1,7 +1,10 @@
-# This is a browser extension to track progress of your cryptominers.
-# Supports 2Miners and Flexpool but soon adding more, be sure to [watch this repo](https://github.com/luke-buttifant/Crypto-Mining-Tracker-Chrome-Extension/subscription) for any updates!
-### Will soon support Ethermine.
+#Minerate
+## A browser extension to track progress of your cryptominers.
+<p align="center" >
+  <img src="./src/icons/icon-500.png" align="center"/>
+</p>
 
+***Supports 2Miners and Flexpool but soon adding more, be sure to [watch this repo](https://github.com/luke-buttifant/Crypto-Mining-Tracker-Chrome-Extension/subscription) for any updates! (Etherminer next to be added)*** 
 
 ## Getting Started
 ### Will be available on the Chrome Store within the next 3 weeks. Untill then:
